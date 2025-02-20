@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    padding-top: 70px;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+/* General Styling */
+  .container {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Hero Section Styling */
+  .hero {
+    background: url('images/hero.jpg') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: rgba(141, 11, 11, 0.712);
+  }
+  
+  /* Section Padding */
+  section {
+    padding: 60px 0;
+  }
+  
+  footer {
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
+}
+
+nav .container {
+  gap: 30vw;
+}
