@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register and Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            background-color: #a7a7ac;
+        }
+
+        .container {
+            width: 400px;
+            background: linear-gradient(90deg, #6d678a, #815c5c);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(90deg, #000000, #000000);
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: #a7a7ac ;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="register-container">
+        <h2>Register</h2>
+        <input type="text" id="register-username" placeholder="Username" required>
+        <input type="password" id="register-password" placeholder="Password" required>
+        <button onclick="register()">Register</button>
+    </div>
+
+    <div class="container hidden" id="login-container">
+        <h2>Login</h2>
+        <input type="text" id="login-username" placeholder="Username" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script>
+        const users = [];
+
+        function toggleContainers() {
+            document.getElementById('register-container').classList.toggle('hidden');
+            document.getElementById('login-container').classList.toggle('hidden');
+        }
+
+        function register() {
+            const username = document.getElementById('register-username').value;
+            const password = document.getElementById('register-password').value;
+
+            if (username && password) {
+                const userExists = users.some(user => user.username === username);
+
+                if (userExists) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'User already exists!'
+                    });
+                } else {
+                    users.push({ username, password });
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Success!',
+                        text: 'Registration successful!'
+                    }).then(() => {
+                        toggleContainers();
+                    });
+                }
+            } else {
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Warning!',
+                    text: 'Please fill out all fields.'
+                });
+            }
+        }
+
+        function login() {
+            const username = document.getElementById('login-username').value;
+            const password = document.getElementById('login-password').value;
+
+            const user = users.find(user => user.username === username && user.password === password);
+
+            if (user) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Welcome!',
+                    text: 'Login successful! Redirecting...'
+                }).then(() => {
+                    window.location.href = 'index.html';
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Wrong credentials. Please try again.'
+                });
+            }
+        }
+    </script>
+</body>
+</html>
