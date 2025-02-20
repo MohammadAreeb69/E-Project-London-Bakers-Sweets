@@ -10,18 +10,18 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-flex ">
-    <div class="container d-flex align-items-center justify-content-center text-center">
+  <nav class="navbar navbar-expand-lg navbar-primary bg-primary fixed-top d-flex ">
+    <div class="container-fluid d-flex align-items-center justify-content-center text-center">
       <!-- Replace 'logo.png' with your own logo image -->
-      <a class="navbar-brand" href="#">
-        <img src="assets/logo.png" alt="Logo" style="height:40px;">
+      <a class="navbar-brand" href="#hero">
+        <img src="./assets/logo.png" alt="Logo" style="height:12vh;">
       </a>
       <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button> -->
-      <div class="collapse navbar-collapse" id="navbarNav">
+      
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#hero"></a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#hero"></a></li> -->
           <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="#sweets">Products - Sweets</a></li>
           <li class="nav-item"><a class="nav-link" href="#bakery">Products - Bakery</a></li>
@@ -29,52 +29,15 @@
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="#">🛒</a></li>
         </ul>
-      </div>
+    
     </div>
   </nav>
 
-  <main class="container">
+  <main class="container-fluid">
     <!-- Hero Section -->
   <section id="hero" class="hero text-center">
-    <div class="container">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-      
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="./assets/hero1.png" alt="Los Angeles">
-          </div>
-      
-          <div class="item">
-            <img src="./assets/hero4.png" alt="Chicago">
-          </div>
-      
-          <div class="item">
-            <img src="./assets/hero3.png" alt="New York">
-          </div>
-        </div>
-
-        <div class="item">
-          <img src="./assets/about-us.png" alt="New York">
-        </div>
-      </div>
-      
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+    
+      <div>
       <h1>Welcome to London Bakers & Sweets</h1>
       <p>Delicious Sweets & Bakery Items</p>
       <a href="#sweets" class="btn btn-primary">Shop Now</a>
@@ -97,11 +60,140 @@
   <!-- Products Section 1-->
   <section id="sweets" class="py-5">
     <div class="container">
-      <h2>Our Products - Sweets</h2>
-
-
+      <div class="text-center">
+        <h2 class="display-2">Our Products - Sweets</h2>
+      </div>
+      <div class="my-4"></div>
+      
+      <!-- Row 1 -->
       <div class="row">
-        <!-- Sweet Product Card -->
+        <!-- Product 1: Brownie -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="./assets/brownie.png" class="card-img-top" alt="Brownie">
+            <div class="card-body text-center">
+              <h5 class="card-title">Brownie</h5>
+              <p class="card-text">Fudgy, rich chocolate treat.</p>
+              <ul class="list-unstyled">
+                <li><strong>Price:</strong> $3.50 | <strong>Weight:</strong> 80g</li>
+                <li><strong>Nutrition:</strong> 250kcal, 30g carbohydrates, 3g proteins, 14g fat</li>
+                <li><strong>Ingredients:</strong> chocolate, butter, sugar, flour, eggs, cocoa, vanilla, salt</li>
+              </ul>
+              <button class="btn btn-success add-to-cart" data-name="Brownie" data-price="3.50">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Product 2: Gulab Jamun -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="./assets/gulab-jamun.png" class="card-img-top" alt="Gulab Jamun">
+            <div class="card-body text-center">
+              <h5 class="card-title">Gulab Jamun</h5>
+              <p class="card-text">Soft, syrup-soaked milk dumpling.</p>
+              <ul class="list-unstyled">
+                <li><strong>Price:</strong> $0.80 | <strong>Weight:</strong> 40g</li>
+                <li><strong>Nutrition:</strong> 150kcal, 25g carbohydrates, 2g proteins, 5g fat</li>
+                <li><strong>Ingredients:</strong> milk solids, flour, sugar, rose water, cardamom, ghee</li>
+              </ul>
+              <button class="btn btn-success add-to-cart" data-name="Gulab Jamun" data-price="0.80">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Product 3: Gajar Halwa -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="./assets/gajar-halwa.png" class="card-img-top" alt="Gajar Halwa">
+            <div class="card-body text-center">
+              <h5 class="card-title">Gajar Halwa</h5>
+              <p class="card-text">Warm, spiced carrot pudding.</p>
+              <ul class="list-unstyled">
+                <li><strong>Price:</strong> $8.00 | <strong>Weight:</strong> 500g (serving)</li>
+                <li><strong>Nutrition:</strong> 350kcal per 100g, 55g carbohydrates, 3g proteins, 10g fat</li>
+                <li><strong>Ingredients:</strong> carrots, milk, sugar, ghee, cardamom, nuts</li>
+              </ul>
+              <button class="btn btn-success add-to-cart" data-name="Gajar Halwa" data-price="8.00">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Row 2 -->
+      <div class="row">
+        <!-- Product 4: Egg Cookies -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="./assets/egg-cookies.png" class="card-img-top" alt="Egg Cookies">
+            <div class="card-body text-center">
+              <h5 class="card-title">Egg Cookies</h5>
+              <p class="card-text">Crisp, light with a hint of egg.</p>
+              <ul class="list-unstyled">
+                <li><strong>Price:</strong> $1.50 | <strong>Weight:</strong> 50g</li>
+                <li><strong>Nutrition:</strong> 120kcal, 15g carbohydrates, 3g proteins, 5g fat</li>
+                <li><strong>Ingredients:</strong> eggs, sugar, flour, butter, vanilla, salt</li>
+              </ul>
+              <button class="btn btn-success add-to-cart" data-name="Egg Cookies" data-price="1.50">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Product 5: Doughnut -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="./assets/doughnut.png" class="card-img-top" alt="Doughnut">
+            <div class="card-body text-center">
+              <h5 class="card-title">Doughnut</h5>
+              <p class="card-text">Soft inside with a glazed finish.</p>
+              <ul class="list-unstyled">
+                <li><strong>Price:</strong> $1.75 | <strong>Weight:</strong> 60g</li>
+                <li><strong>Nutrition:</strong> 250kcal, 30g carbohydrates, 4g proteins, 12g fat</li>
+                <li><strong>Ingredients:</strong> flour, sugar, eggs, milk, yeast, butter, glaze</li>
+              </ul>
+              <button class="btn btn-success add-to-cart" data-name="Doughnut" data-price="1.75">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Product 6: Vanilla Ice Cream -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="./assets/vanilla-icecream.png" class="card-img-top" alt="Vanilla Ice Cream">
+            <div class="card-body text-center">
+              <h5 class="card-title">Vanilla Ice Cream</h5>
+              <p class="card-text">Rich, classic vanilla chill.</p>
+              <ul class="list-unstyled">
+                <li><strong>Price:</strong> $5.00 | <strong>Weight:</strong> 473ml (pint)</li>
+                <li><strong>Nutrition:</strong> 250kcal per ½ cup, 28g carbohydrates, 4g proteins, 14g fat</li>
+                <li><strong>Ingredients:</strong> milk, cream, sugar, vanilla, stabilizers</li>
+              </ul>
+              <button class="btn btn-success add-to-cart" data-name="Vanilla Ice Cream" data-price="5.00">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section 2-->
+  <section id="bakery" class="py-5">
+    <div class="container">
+
+      <div class="text-center ">
+        <h2 class="display-2">Our Products - Sweets</h2>
+      </div>
+
+
+      <div>
+        <br>
+        <br>
+      </div>
+      
+
+
+      <!--row1-->
+      <div class="row">
+        <!-- Sweet Product 1 -->
         <div class="col-md-4">
           <div class="card mb-4">
             
@@ -110,11 +202,14 @@
               <h5 class="card-title ">Muffins</h5>
               <p class="card-text">Delicious Muffins, with chocolate coating.</p>
               <p>Price: $5 | Weight: 200g</p>
+              <p class="nutriton">Nutrition Value: ~200 calories, 8g fat, 28g carbs, 4g protein</p>
+              <p class="ingredients">Ingredients: Flour, sugar, eggs, butter, milk, baking powder, and your choice of add-ins (blueberries, nuts, etc.)</p>
               <button class="btn btn-success add-to-cart" data-name="Muffins" data-price="5">Add to Cart</button>
             </div>
           </div>
         </div>
-        <!-- Bakery Product Card -->
+        
+        <!--sweet02-->
         <div class="col-md-4">
           <div class="card mb-4">
             <!-- Replace 'bakery.jpg' with your own product image -->
@@ -123,47 +218,84 @@
               <h5 class="card-title">Chocolate Cake</h5>
               <p class="card-text">Rich chocolate cake with creamy frosting.</p>
               <p>Price: $15 | Weight: 500g</p>
+              <p class="nutriton">Nutrition Value: ~200 calories, 8g fat, 28g carbs, 4g protein</p>
+              <p class="ingredients">Ingredients: Flour, sugar, eggs, butter, milk, baking powder, and your choice of add-ins (blueberries, nuts, etc.)</p>
               <button class="btn btn-success add-to-cart" data-name="Chocolate Cake" data-price="15">Add to Cart</button>
             </div>
           </div>
         </div>
-        <!-- Add more product cards as needed -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Products Section 2-->
-  <section id="bakery" class="py-5">
-    <div class="container">
-      <h2>Our Products - Bakery</h2>
-      <div class="row">
-        <!-- Sweet Product Card -->
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <!-- Replace 'sweet.jpg' with your own product image -->
-            <img src="images/sweet.jpg" class="card-img-top" alt="Sweet">
-            <div class="card-body">
-              <h5 class="card-title">Gulab Jamun</h5>
-              <p class="card-text">Delicious soft & juicy sweets.</p>
-              <p>Price: $5 | Weight: 200g</p>
-              <button class="btn btn-success add-to-cart" data-name="Gulab Jamun" data-price="5">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-       
+        
+        <!--sweet03-->
         <div class="col-md-4">
           <div class="card mb-4">
             <!-- Replace 'bakery.jpg' with your own product image -->
-            <img src="images/bakery.jpg" class="card-img-top" alt="Bakery">
-            <div class="card-body">
+            <img src="./assets/Choco-cake.png" class="card-img-top" alt="cake1">
+            <div class="card-body text-center">
               <h5 class="card-title">Chocolate Cake</h5>
               <p class="card-text">Rich chocolate cake with creamy frosting.</p>
               <p>Price: $15 | Weight: 500g</p>
+              <p class="nutriton">Nutrition Value: ~200 calories, 8g fat, 28g carbs, 4g protein</p>
+              <p class="ingredients">Ingredients: Flour, sugar, eggs, butter, milk, baking powder, and your choice of add-ins (blueberries, nuts, etc.)</p>
               <button class="btn btn-success add-to-cart" data-name="Chocolate Cake" data-price="15">Add to Cart</button>
             </div>
           </div>
         </div>
-        <!-- Add more product cards as needed -->
+      </div>
+
+      <div>
+        <br>
+        <br>
+      </div>
+
+      <!--row2-->
+      <div class="row">
+        <!-- Sweet Product 04 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            
+            <img src="./assets/muffins.png" class="card-img-top" alt="Sweet">
+            <div class="card-body text-center">
+              <h5 class="card-title ">Muffins</h5>
+              <p class="card-text">Delicious Muffins, with chocolate coating.</p>
+              <p>Price: $5 | Weight: 200g</p>
+              <p class="nutriton">Nutrition Value: ~200 calories, 8g fat, 28g carbs, 4g protein</p>
+              <p class="ingredients">Ingredients: Flour, sugar, eggs, butter, milk, baking powder, and your choice of add-ins (blueberries, nuts, etc.)</p>
+              <button class="btn btn-success add-to-cart" data-name="Muffins" data-price="5">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+        <!--sweet05-->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <!-- Replace 'bakery.jpg' with your own product image -->
+            <img src="./assets/Choco-cake.png" class="card-img-top" alt="cake1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Chocolate Cake</h5>
+              <p class="card-text">Rich chocolate cake with creamy frosting.</p>
+              <p>Price: $15 | Weight: 500g</p>
+              <p class="nutriton">Nutrition Value: ~200 calories, 8g fat, 28g carbs, 4g protein</p>
+              <p class="ingredients">Ingredients: Flour, sugar, eggs, butter, milk, baking powder, and your choice of add-ins (blueberries, nuts, etc.)</p>
+              <button class="btn btn-success add-to-cart" data-name="Chocolate Cake" data-price="15">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+        <!--sweet06-->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            
+            <img src="./assets/Choco-cake.png" class="card-img-top" alt="cake1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Chocolate Cake</h5>
+              <p class="card-text">Rich chocolate cake with creamy frosting.</p>
+              <p>Price: $15 | Weight: 500g</p>
+              <p class="nutriton">Nutrition Value: ~200 calories, 8g fat, 28g carbs, 4g protein</p>
+              <p class="ingredients">Ingredients: Flour, sugar, eggs, butter, milk, baking powder, and your choice of add-ins (blueberries, nuts, etc.)</p>
+              <button class="btn btn-success add-to-cart" data-name="Chocolate Cake" data-price="15">Add to Cart</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

@@ -21,13 +21,14 @@ body{
   
   /* Hero Section Styling */
   .hero {
-    background: url('images/hero.jpg') center/cover no-repeat;
+    background: url('./assets/hero1.png') center/cover no-repeat;
     height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: rgba(13, 111, 240, 0.637);
     text-align: center;
+    
   }
   
   /* Navbar Styling */
@@ -46,6 +47,15 @@ body{
     width: 100vw;
 }
 
-nav .container {
+nav .container-fluid {
   gap: 30vw;
+}
+
+
+main #sweets{
+      background-color: #bae8d4;
+}
+
+.card img{
+  height: 40vh;
 }
