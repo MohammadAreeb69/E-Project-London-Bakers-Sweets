@@ -4,6 +4,7 @@
     max-width: 100%;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 body{
@@ -68,7 +69,7 @@ main #sweets{
 
 
 main footer{
-  bottom: 0;
+  position: static;
 }
 
 main{
