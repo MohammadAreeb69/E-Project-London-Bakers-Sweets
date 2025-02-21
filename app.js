@@ -41,3 +41,84 @@ if (document.getElementById("checkout")) {
     window.location.href = "payment.html";
   });
 }
+
+
+
+document.getElementById("searchForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    let searchQuery = document.getElementById("searchInput").value.trim().toLowerCase();
+    if (searchQuery === "") return; // Ignore empty search
+
+    // Get all product elements
+    let allProducts = document.querySelectorAll(".product-item"); // Ensure all products have this class
+    let foundProduct = null;
+
+    allProducts.forEach(product => {
+        let productName = product.getAttribute("data-name").toLowerCase();
+        if (productName === searchQuery) {
+            foundProduct = product;
+        } else {
+            product.style.display = "none"; // Hide non-matching products
+        }
+    });
+
+    if (foundProduct) {
+        foundProduct.style.display = "block"; // Show only the matched product
+        foundProduct.scrollIntoView({ behavior: "smooth" });
+    } else {
+        // Redirect to another page if product isn't found here
+        let productPages = ["products.html", "gift-hampers.html"];
+        let foundOnPage = false;
+
+        productPages.forEach(page => {
+            fetch(page)
+                .then(response => response.text())
+                .then(html => {
+                    let parser = new DOMParser();
+                    let doc = parser.parseFromString(html, "text/html");
+                    let products = doc.querySelectorAll(".product-item");
+
+                    products.forEach(product => {
+                        if (product.getAttribute("data-name").toLowerCase() === searchQuery) {
+                            foundOnPage = true;
+                            window.location.href = `${page}#${product.id}`;
+                        }
+                    });
+
+                    if (!foundOnPage) {
+                        alert("No exact match found!");
+                    }
+                });
+        });
+    }
+});
+
+document.getElementById("searchForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent form submission
+
+  let searchQuery = document.getElementById("searchInput").value.trim().toLowerCase();
+  if (searchQuery === "") return; // Ignore empty search
+
+  // Get all product elements
+  let allProducts = document.querySelectorAll(".product-item"); // Ensure all products have this class
+  let found = false;
+
+  allProducts.forEach(product => {
+      let productName = product.getAttribute("data-name").toLowerCase();
+      if (productName.includes(searchQuery)) {
+          product.style.display = "block"; // Show matching products
+          found = true;
+      } else {
+          product.style.display = "none"; // Hide non-matching products
+      }
+  });
+
+  if (!found) {
+      alert("No matching products found!");
+  }
+});
+
+
+
+
