@@ -13,7 +13,7 @@
   <nav class="navbar navbar-expand-lg  fixed-top d-flex ">
     <div class="container-fluid d-flex align-items-center justify-content-center text-center">
       <!-- Replace 'logo.png' with your own logo image -->
-      <a class="navbar-brand" href="#hero">
+      <a class="navbar-brand" href="index.html#hero">
         <img src="./assets/logo.png" alt="Logo" style="height:12vh;">
       </a>
       <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -25,7 +25,7 @@
           <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="products.html">Products - Sweets</a></li>
           <li class="nav-item"><a class="nav-link" href="products.html">Products - Bakery</a></li>
-          <li class="nav-item"><a class="nav-link" href="gift hampers.html">Gift Hampers</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="gift hampers.html">Gift Hampers</a></li> -->
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="#">🛒</a></li>
           <li class="nav-item"><a class="nav-link" href="register.html">login</a></li>
@@ -33,256 +33,268 @@
     
     </div>
   </nav>
-    <!-- Products Section 1-->
-  <section id="sweets" class="py-5">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="display-2">Our Products - Sweets</h2>
+
+  <main class="container-fluid">
+    <!-- Products Section - Sweets -->
+    <section id="sweets" class="py-5">
+      <div class="container">
+          <div class="text-center">
+              <h2 class="display-2">Our Products - Sweets</h2>
+          </div>
+          <div class="my-4"></div>
+
+          <!-- Row 1 -->
+          <div class="row">
+              <!-- Product 1: Waffles -->
+              <div id="Waffles" class="col-md-4">
+                  <div class="card mb-4">
+                      <img src="./assets/waffles.png" class="card-img-top" alt="Waffles">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Waffles</h5>
+                          <p class="card-text">Crisp outside, tender inside.</p>
+                          <ul class="list-unstyled">
+                              <li><strong>Price:</strong> $4.00 | <strong>Weight:</strong> 150g per serving</li>
+                              <li><strong>Nutrition:</strong> 350kcal, 45g carbohydrates, 8g proteins, 15g fat
+                              </li>
+                              <li><strong>Ingredients:</strong> flour, eggs, milk, butter, baking powder, sugar,
+                                  salt</li>
+                          </ul>
+                          <button class="btn btn-success add-to-cart" data-name="Waffles" data-price="4.00">Add to
+                              Cart</button>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Product 2: Gulab Jamun -->
+              <div class="col-md-4">
+                  <div class="card mb-4">
+                      <img src="./assets/gulab-jamun.png" class="card-img-top" alt="Gulab Jamun">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Gulab Jamun</h5>
+                          <p class="card-text">Soft, syrup-soaked milk dumpling.</p>
+                          <ul class="list-unstyled">
+                              <li><strong>Price:</strong> $0.80 | <strong>Weight:</strong> 40g</li>
+                              <li><strong>Nutrition:</strong> 150kcal, 25g carbohydrates, 2g proteins, 5g fat</li>
+                              <li><strong>Ingredients:</strong> milk solids, flour, sugar, rose water, cardamom,
+                                  ghee</li>
+                          </ul>
+                          <button class="btn btn-success add-to-cart" data-name="Gulab Jamun"
+                              data-price="0.80">Add to Cart</button>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Product 3: Gajar Halwa -->
+              <div class="col-md-4">
+                  <div class="card mb-4">
+                      <img src="./assets/gajar-halwa.png" class="card-img-top" alt="Gajar Halwa">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Gajar Halwa</h5>
+                          <p class="card-text">Warm, spiced carrot pudding.</p>
+                          <ul class="list-unstyled">
+                              <li><strong>Price:</strong> $8.00 | <strong>Weight:</strong> 500g (serving)</li>
+                              <li><strong>Nutrition:</strong> 350kcal per 100g, 55g carbohydrates, 3g proteins,
+                                  10g fat</li>
+                              <li><strong>Ingredients:</strong> carrots, milk, sugar, ghee, cardamom, nuts</li>
+                          </ul>
+                          <button class="btn btn-success add-to-cart" data-name="Gajar Halwa"
+                              data-price="8.00">Add to Cart</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="row">
+              <!-- Product 4: Doughnut -->
+              <div class="col-md-4">
+                  <div class="card mb-4">
+                      <img src="./assets/doughnuts.png" class="card-img-top" alt="Doughnut">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Doughnut</h5>
+                          <p class="card-text">Soft inside with a glazed finish.</p>
+                          <ul class="list-unstyled">
+                              <li><strong>Price:</strong> $1.75 | <strong>Weight:</strong> 60g</li>
+                              <li><strong>Nutrition:</strong> 250kcal, 30g carbohydrates, 4g proteins, 12g fat
+                              </li>
+                              <li><strong>Ingredients:</strong> flour, sugar, eggs, milk, yeast, butter, glaze
+                              </li>
+                          </ul>
+                          <button class="btn btn-success add-to-cart" data-name="Doughnut" data-price="1.75">Add
+                              to Cart</button>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Product 5: Kheer -->
+              <div class="col-md-4">
+                  <div class="card mb-4">
+                      <img src="./assets/kheer.png" class="card-img-top" alt="Kheer">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Kheer</h5>
+                          <p class="card-text">Creamy, aromatic rice pudding.</p>
+                          <ul class="list-unstyled">
+                              <li><strong>Price:</strong> $7.00 | <strong>Weight:</strong> 250g per serving</li>
+                              <li><strong>Nutrition:</strong> 200kcal, 30g carbohydrates, 5g proteins, 8g fat</li>
+                              <li><strong>Ingredients:</strong> rice, milk, sugar, cardamom, saffron, nuts</li>
+                          </ul>
+                          <button class="btn btn-success add-to-cart" data-name="Kheer" data-price="7.00">Add to
+                              Cart</button>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Product 6: Vanilla Ice Cream -->
+              <div class="col-md-4">
+                  <div class="card mb-4">
+                      <img src="./assets/vanilla-icecream.png" class="card-img-top" alt="Vanilla Ice Cream">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Vanilla Ice Cream</h5>
+                          <p class="card-text">Rich, classic vanilla chill.</p>
+                          <ul class="list-unstyled">
+                              <li><strong>Price:</strong> $5.00 | <strong>Weight:</strong> 473ml (pint)</li>
+                              <li><strong>Nutrition:</strong> 250kcal per ½ cup, 28g carbohydrates, 4g proteins,
+                                  14g fat</li>
+                              <li><strong>Ingredients:</strong> milk, cream, sugar, vanilla, stabilizers, flavours
+                              </li>
+                          </ul>
+                          <button class="btn btn-success add-to-cart" data-name="Vanilla Ice Cream"
+                              data-price="5.00">Add to Cart</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="my-4"></div>
-      
-      <!-- Row 1 -->
-      <div  class="row">
-        <!-- Product 1: Waffles -->
-        <div id="waffles" class="col-md-4">
-          <div class="card mb-4">
-            <img src="./assets/waffles.png" class="card-img-top" alt="Waffles">
-            <div class="card-body text-center">
-              <h5 class="card-title">Waffles</h5>
-              <p class="card-text">Crisp outside, tender inside.</p>
-              <ul class="list-unstyled">
-                <li><strong>Price:</strong> $4.00</li>
-                <li><strong>Weight:</strong> 150g per serving</li>
-                <li><strong>Nutrition:</strong> 350kcal, 45g carbohydrates, 8g proteins, 15g fat</li>
-                <li><strong>Ingredients:</strong> flour, eggs, milk, butter, baking powder, sugar, salt</li>
-              </ul>
-              <button class="btn btn-success add-to-cart" data-name="Waffles" data-price="4.00">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Product 2: Gulab Jamun -->
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="./assets/gulab-jamun.png" class="card-img-top" alt="Gulab Jamun">
-            <div class="card-body text-center">
-              <h5 class="card-title">Gulab Jamun</h5>
-              <p class="card-text">Soft, syrup-soaked milk dumpling.</p>
-              <ul class="list-unstyled">
-                <li><strong>Price:</strong> $0.80 | <strong>Weight:</strong> 40g</li>
-                <li><strong>Nutrition:</strong> 150kcal, 25g carbohydrates, 2g proteins, 5g fat</li>
-                <li><strong>Ingredients:</strong> milk solids, flour, sugar, rose water, cardamom, ghee</li>
-              </ul>
-              <button class="btn btn-success add-to-cart" data-name="Gulab Jamun" data-price="0.80">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Product 3: Gajar Halwa -->
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="./assets/gajar-halwa.png" class="card-img-top" alt="Gajar Halwa">
-            <div class="card-body text-center">
-              <h5 class="card-title">Gajar Halwa</h5>
-              <p class="card-text">Warm, spiced carrot pudding.</p>
-              <ul class="list-unstyled">
-                <li><strong>Price:</strong> $8.00 | <strong>Weight:</strong> 500g (serving)</li>
-                <li><strong>Nutrition:</strong> 350kcal per 100g, 55g carbohydrates, 3g proteins, 10g fat</li>
-                <li><strong>Ingredients:</strong> carrots, milk, sugar, ghee, cardamom, nuts</li>
-              </ul>
-              <button class="btn btn-success add-to-cart" data-name="Gajar Halwa" data-price="8.00">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Row 2 -->
-      <div class="row">
-        <!-- Product 4: doughnut -->
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="./assets/doughnuts.png" class="card-img-top" alt="Doughnut">
-            <div class="card-body text-center">
-              <h5 class="card-title">Doughnut</h5>
-              <p class="card-text">Soft inside with a glazed finish.</p>
-              <ul class="list-unstyled">
-                <li><strong>Price:</strong> $1.75 <strong>Weight:</strong> 60g</li>
-                <li><strong>Nutrition:</strong> 250kcal, 30g carbohydrates, 4g proteins, 12g fat</li>
-                <li><strong>Ingredients:</strong> flour, sugar, eggs, milk, yeast, butter, glaze</li>
-              </ul>
-              <button class="btn btn-success add-to-cart" data-name="Doughnut" data-price="1.75">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Product 5: Kheer -->
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="./assets/kheer.png" class="card-img-top" alt="kheer">
-            <div class="card-body text-center">
-              <h5 class="card-title">Kheer (Rice Pudding)</h5>
-              <p class="card-text">Creamy, aromatic rice pudding.</p>
-              <ul class="list-unstyled">
-                <li><strong>Price:</strong> $7.00 | <strong>Weight:</strong> 250g per serving</li>
-                <li><strong>Nutrition:</strong> 200kcal, 30g carbohydrates, 5g proteins, 8g fat</li>
-                <li><strong>Ingredients:</strong> rice, milk, sugar, cardamom, saffron, nuts</li>
-              </ul>
-              <button class="btn btn-success add-to-cart" data-name="Kheer" data-price="7.00">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Product 6: Vanilla Ice Cream -->
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="./assets/vanilla-icecream.png" class="card-img-top" alt="Vanilla Ice Cream">
-            <div class="card-body text-center">
-              <h5 class="card-title">Vanilla Ice Cream</h5>
-              <p class="card-text">Rich, classic vanilla chill.</p>
-              <ul class="list-unstyled">
-                <li><strong>Price:</strong> $5.00 | <strong>Weight:</strong> 473ml (pint)</li>
-                <li><strong>Nutrition:</strong> 250kcal per ½ cup, 28g carbohydrates, 4g proteins, 14g fat</li>
-                <li><strong>Ingredients:</strong> milk, cream, sugar, vanilla, stabilizers</li>
-              </ul>
-              <button class="btn btn-success add-to-cart" data-name="Vanilla Ice Cream" data-price="5.00">Add to Cart</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 
-  <!-- Products Section 2-->
+  <!-- Products Section - Bakery -->
   <section id="bakery" class="py-5">
     <div class="container">
-
-      <div class="text-center ">
-        <h2 class="display-2">Our Products - Sweets</h2>
-      </div>
-
-
-      <div>
-        <br>
-        <br>
-      </div>
-      
-
-
-      <!--row1-->
-      <div class="row">
-        <!-- Sweet Product 1 -->
-        <div class="col-md-4">
-          <div class="card mb-4">
-            
-            <img src="./assets/muffins.png" class="card-img-top" alt="Sweet">
-            <div class="card-body text-center">
-              <h5 class="card-title ">Muffins</h5>
-              <p class="card-text">Delicious Muffins, with chocolate coating.</p>
-              <p>Price: $5 | Weight: 200g</p>
-              <p class="nutriton">Nutrition Value: ~200 calories, 8g fat, 28g carbs, 4g protein</p>
-              <p class="ingredients">Ingredients: Flour, sugar, eggs, butter, milk, baking powder, and your choice of add-ins (blueberries, nuts, etc.)</p>
-              <button class="btn btn-success add-to-cart" data-name="Muffins" data-price="5">Add to Cart</button>
-            </div>
-          </div>
+        <div class="text-center">
+            <h2 class="display-2">Our Products - Bakery</h2>
         </div>
-        
-        <!--b02-->
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="./assets/egg-cookies.png" class="card-img-top" alt="Egg Cookies">
-            <div class="card-body text-center">
-              <h5 class="card-title">Egg Cookies</h5>
-              <p class="card-text">Crisp, light with a hint of egg.</p>
-              <ul class="list-unstyled">
-                <li><strong>Price:</strong> $1.50 | <strong>Weight:</strong> 50g</li>
-                <li><strong>Nutrition:</strong> 120kcal, 15g carbohydrates, 3g proteins, 5g fat</li>
-                <li><strong>Ingredients:</strong> eggs, sugar, flour, butter, vanilla, salt</li>
-              </ul>
-              <button class="btn btn-success add-to-cart" data-name="Egg Cookies" data-price="1.50">Add to Cart</button>
+        <div class="my-4"></div>
+
+        <div class="row">
+            <!-- Product 1: Croissant -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./assets/crossiant.png" class="card-img-top" alt="Croissant">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Croissant</h5>
+                        <p class="card-text">Buttery, flaky pastry perfection.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Price:</strong> $3.00 | <strong>Weight:</strong> 70g</li>
+                            <li><strong>Nutrition:</strong> 300kcal, 35g carbohydrates, 6g proteins, 16g fat
+                            </li>
+                            <li><strong>Ingredients:</strong> flour, butter, sugar, yeast, salt, water, unsalted
+                                Butter, egg yolk</li>
+                        </ul>
+                        <button class="btn btn-success add-to-cart" data-name="Croissant" data-price="3.00">Add
+                            to Cart</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        
-        <!--b03-->
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="./assets/brownie.png" class="card-img-top" alt="Brownie">
-            <div class="card-body text-center">
-              <h5 class="card-title">Brownie</h5>
-              <p class="card-text">Fudgy, rich chocolate treat.</p>
-              <ul class="list-unstyled">
-                <li><strong>Price:</strong> $3.50 | <strong>Weight:</strong> 80g</li>
-                <li><strong>Nutrition:</strong> 250kcal, 30g carbohydrates, 3g proteins, 14g fat</li>
-                <li><strong>Ingredients:</strong> chocolate, butter, sugar, flour, eggs, cocoa, vanilla, salt</li>
-              </ul>
-              <button class="btn btn-success add-to-cart" data-name="Brownie" data-price="3.50">Add to Cart</button>
+
+            <!-- Product 2: Egg Cookies -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./assets/egg-cookies.png" class="card-img-top" alt="Egg Cookies">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Egg Cookies</h5>
+                        <p class="card-text">Crisp, light with a hint of egg.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Price:</strong> $1.50 | <strong>Weight:</strong> 50g</li>
+                            <li><strong>Nutrition:</strong> 120kcal, 15g carbohydrates, 3g proteins, 5g fat</li>
+                            <li><strong>Ingredients:</strong> eggs, sugar, flour, butter, vanilla, salt</li>
+                        </ul>
+                        <button class="btn btn-success add-to-cart" data-name="Egg Cookies"
+                            data-price="1.50">Add to Cart</button>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <!-- Product 3: Brownie -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./assets/brownie.png" class="card-img-top" alt="Brownie">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Brownie</h5>
+                        <p class="card-text">Fudgy, rich chocolate treat.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Price:</strong> $3.50 | <strong>Weight:</strong> 80g</li>
+                            <li><strong>Nutrition:</strong> 250kcal, 30g carbohydrates, 3g proteins, 14g fat
+                            </li>
+                            <li><strong>Ingredients:</strong> chocolate, butter, sugar, flour, eggs, cocoa,
+                                vanilla, salt</li>
+                        </ul>
+                        <button class="btn btn-success add-to-cart" data-name="Brownie" data-price="3.50">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
-      <div>
-        <br>
-        <br>
-      </div>
+        <div class="row">
+            <!-- Product 4: Peanut Butter -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./assets/peanut-butter.png" class="card-img-top" alt="Peanut Butter">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Peanut Butter</h5>
+                        <p class="card-text">Creamy, smooth nutty spread.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Price:</strong> $6.00 | <strong>Weight:</strong> 454g per jar</li>
+                            <li><strong>Nutrition:</strong> 190kcal per 2 tbsp, 6g carbohydrates, 8g proteins,
+                                16g fat</li>
+                            <li><strong>Ingredients:</strong> roasted peanuts, salt</li>
+                        </ul>
+                        <button class="btn btn-success add-to-cart" data-name="Peanut Butter"
+                            data-price="6.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
 
-      <!--row2-->
-      <div class="row">
-        <!-- b Product 04 -->
-        <!-- Peanut Butter Product Card -->
-<div class="col-md-4">
-  <div class="card mb-4">
-    <img src="./assets/peanut-butter.png" class="card-img-top" alt="Peanut Butter">
-    <div class="card-body text-center">
-      <h5 class="card-title">Peanut Butter</h5>
-      <p class="card-text">Creamy, smooth nutty spread.</p>
-      <ul class="list-unstyled">
-        <li><strong>Price:</strong> $6.00</li>
-        <li><strong>Weight:</strong> 454g per jar</li>
-        <li><strong>Nutrition:</strong> 190kcal per 2 tbsp, 6g carbohydrates, 8g proteins, 16g fat</li>
-        <li><strong>Ingredients:</strong> roasted peanuts, salt</li>
-      </ul>
-      <button class="btn btn-success add-to-cart" data-name="Peanut Butter" data-price="6.00">Add to Cart</button>
-    </div>
-  </div>
-</div>
-        
-        <!-- Rusk Product Card -->
-<div class="col-md-4">
-  <div class="card mb-4">
-    <img src="./assets/rusk.png" class="card-img-top" alt="Rusk">
-    <div class="card-body text-center">
-      <h5 class="card-title">Rusk</h5>
-      <p class="card-text">Crisp, golden twice-baked bread.</p>
-      <ul class="list-unstyled">
-        <li><strong>Price:</strong> $2.00</li>
-        <li><strong>Weight:</strong> 50g</li>
-        <li><strong>Nutrition:</strong> 100kcal, 20g carbohydrates, 2g proteins, 1g fat</li>
-        <li><strong>Ingredients:</strong> wheat flour, sugar, salt, yeast, water</li>
-      </ul>
-      <button class="btn btn-success add-to-cart" data-name="Rusk" data-price="2.00">Add to Cart</button>
-    </div>
-  </div>
-</div>
+            <!-- Product 5: Rusk -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./assets/rusk.png" class="card-img-top" alt="Rusk">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Rusk</h5>
+                        <p class="card-text">Crisp, golden twice-baked bread.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Price:</strong> $2.00 | <strong>Weight:</strong> 50g</li>
+                            <li><strong>Nutrition:</strong> 100kcal, 20g carbohydrates, 2g proteins, 1g fat</li>
+                            <li><strong>Ingredients:</strong> wheat flour, sugar, salt, yeast, water</li>
+                        </ul>
+                        <button class="btn btn-success add-to-cart" data-name="Rusk" data-price="2.00">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
 
-<!-- Soft Bread Product Card -->
-<div class="col-md-4">
-  <div class="card mb-4">
-    <img src="./assets/bread.png" class="card-img-top" alt="Soft Bread">
-    <div class="card-body text-center">
-      <h5 class="card-title">Soft Bread</h5>
-      <p class="card-text">Fresh, soft loaf perfect for sandwiches.</p>
-      <ul class="list-unstyled">
-        <li><strong>Price:</strong> $3.50</li>
-        <li><strong>Weight:</strong> 500g per loaf</li>
-        <li><strong>Nutrition:</strong> 80kcal per slice, 15g carbohydrates, 3g proteins, 1g fat</li>
-        <li><strong>Ingredients:</strong> flour, water, yeast, salt</li>
-      </ul>
-      <button class="btn btn-success add-to-cart" data-name="Soft Bread" data-price="3.50">Add to Cart</button>
+            <!-- Product 6: Soft Bread -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./assets/bread.png" class="card-img-top" alt="Soft Bread">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Soft Bread</h5>
+                        <p class="card-text">Fresh, soft loaf perfect for sandwiches.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Price:</strong> $3.50 | <strong>Weight:</strong> 500g per loaf</li>
+                            <li><strong>Nutrition:</strong> 80kcal per slice, 15g carbohydrates, 3g proteins, 1g
+                                fat</li>
+                            <li><strong>Ingredients:</strong> flour, water, yeast, salt</li>
+                        </ul>
+                        <button class="btn btn-success add-to-cart" data-name="Soft Bread" data-price="3.50">Add
+                            to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-      </div>
-    </div>
-  </section>
+</section>
+  </main>
+    
 </body>
 </html>
